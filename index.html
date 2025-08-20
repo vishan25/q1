@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Quarterly Earnings Report</title>
+
+    <!-- RevealJS Core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <!-- Theme: Black (for a professional look) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <!-- Theme for syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+
+    <style>
+        /* Custom styles for a more polished look */
+        .reveal .slides section .email {
+            font-size: 0.6em;
+            color: #ccc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Slide 1: Title Slide with Email -->
+            <section>
+                <h2>Quarterly Earnings Report</h2>
+                <p>Fiscal Year 2025 - Q3</p>
+                <p>Presented by: Technical Consulting Division</p>
+                <p class="email">Contact: 22f3000165@ds.study.iitm.ac.in</p>
+            </section>
+
+            <!-- Slide 2: Markdown Slide -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Key Financial Highlights
+                    * **Revenue Growth:** Up 12% year-over-year.
+                    * **Net Profit Margin:** Increased to 18.5%.
+                    * **Earnings Per Share (EPS):** Beat estimates at $2.50.
+                    * **New Client Acquisition:** Grew by 200+ this quarter.
+                </textarea>
+            </section>
+
+            <!-- Slide 3: Animated Elements (Fragments) -->
+            <section>
+                <h2>Strategic Growth Drivers</h2>
+                <ul>
+                    <li class="fragment">Expanding into emerging markets</li>
+                    <li class="fragment">Successful launch of our new AI-powered analytics platform</li>
+                    <li class="fragment">Strengthened strategic partnerships with industry leaders</li>
+                </ul>
+            </section>
+
+            <!-- Slide 4: Code Sample with Syntax Highlighting -->
+            <section>
+                <h2>Performance Analysis Script</h2>
+                <pre><code data-line-numbers="1-5" class="python">
+import pandas as pd
+
+# Load quarterly data from CSV
+data = pd.read_csv('earnings_q3.csv')
+# Calculate key performance indicators
+print(data.describe())
+                </code></pre>
+            </section>
+
+            <!-- Slide 5: Mathematical Equation and Speaker Notes -->
+            <section>
+                <h2>Return on Investment (ROI)</h2>
+                <p>Our formula for evaluating project success:</p>
+                <!-- Using MathJax for formula rendering -->
+                <p>
+                    \[ROI = \frac{\text{Net Profit}}{\text{Cost of Investment}} \times 100\%\]
+                </p>
+
+                <!-- Speaker notes are hidden during the presentation -->
+                <aside class="notes">
+                    Hello team. On this slide, I want to emphasize that our ROI has consistently outperformed industry benchmarks.
+                    Specifically, mention the "Project Titan" initiative which yielded an ROI of over 300% this quarter.
+                    This highlights our efficient capital allocation and strategic planning.
+                </aside>
+            </section>
+
+            <!-- Slide 6: Closing Slide -->
+            <section>
+                <h2>Q&A and Next Steps</h2>
+                <p>Thank you.</p>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- RevealJS Core JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.js"></script>
+    <!-- RevealJS Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/math/math.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+
+    <script>
+        // Initialize RevealJS
+        Reveal.initialize({
+            hash: true,
+            // Enable plugins
+            plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>
